@@ -17,14 +17,14 @@ public class Exercise1 {
         
         Scanner myObj = new Scanner(System.in);
         
-        System.out.println("\nCALCULADORA DE PROMEDIOS\n");
-        System.out.println("INGRESE EL PRIMER DIGITO: ");       
+        System.out.println("\nAVERAGE CALCULATOR\n");
+        System.out.println("ENTER FIRST VALUE: ");       
         
         // nextInt() used to read integers
         digit1 = myObj.nextInt(); 
-        System.out.println("INGRESE EL SEGUNDO DIGITO: ");       
+        System.out.println("ENTER SECOND VALUE: ");       
         digit2 = myObj.nextInt();
-        System.out.println("INGRESE EL TERCER DIGITO: ");       
+        System.out.println("ENTER THIRD VALUE: ");       
         digit3 = myObj.nextInt();
         
         // sum 3 digits and devid by 3
@@ -32,6 +32,6 @@ public class Exercise1 {
         promedio = total / 3;
         
         // print results
-        System.out.println("El promedio de los digitos ingresados es: " + promedio);
+        System.out.println("THE AVERAGE IS: " + promedio);
     }
 }
