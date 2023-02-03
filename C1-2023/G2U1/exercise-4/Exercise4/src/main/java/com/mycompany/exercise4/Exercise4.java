@@ -1,5 +1,5 @@
 
-// Escriba un programa que solicite al usuario su peso, su altura y calcule su IMC (Índice de masa corporal) con la siguiente formula.Escriba un programa que solicite al usuario su peso, su altura y calcule su IMC (Índice de masa corporal) con la siguiente formula.
+// Write a program that asks the user for his weight, his height and calculates his BMI (Body Mass Index) with the following formula.Write a program that asks the user for his weight, his height and calculates his BMI (Body Mass Index) with the following formula.
 
 package com.mycompany.exercise4;
 import java.util.Scanner;
