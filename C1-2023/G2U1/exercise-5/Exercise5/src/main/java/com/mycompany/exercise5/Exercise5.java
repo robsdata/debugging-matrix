@@ -10,8 +10,8 @@ public class Exercise5 {
     public static void main(String[] args) {
         
         // Initialize variables
-        float base;
-        float height;
+        float baseTriangle;
+        float heightTriangle;
         float calculation; 
         float hypotenuse;
         
@@ -20,17 +20,16 @@ public class Exercise5 {
         
         // Ask for user input     
         System.out.println("ENTER BASE (m): ");
-        base = myObjScanner.nextFloat();
+        baseTriangle = myObjScanner.nextFloat();
         System.out.println("ENTER HEIGHT (m): ");
-        height = myObjScanner.nextFloat();
+        heightTriangle = myObjScanner.nextFloat();
         
         // Calculate IMC and print results 
         
-        calculation = (float) (Math.pow(base, 2) + Math.pow(height, 2));
+        calculation = (float) (Math.pow(baseTriangle, 2) + Math.pow(heightTriangle, 2));
         hypotenuse = (float) (Math.sqrt(calculation));
         System.out.println("THE HYPOTENUSE IS: " + hypotenuse);
         
-        
-        
+   
     }
 }
