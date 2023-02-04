@@ -10,28 +10,44 @@ import java.util.Scanner;
 public class Exercise2 {
 
     public static void main(String[] args) {
+
+        do {            
+            System.out.println("The higher number is: " + DetermineHigherNumber());    
+        } while (ContinuePlaying());
         
-        int firstValue;
-        int secondValue;        
+    }
+    
+    public static float DetermineHigherNumber() {
         
         // Create a Scanner object
-        Scanner myObjScanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
        
         // Capture Values
         System.out.println("CALCULATE WHAT VALUE IS HIGHER");
         System.out.println("ENTER FIRST VALUE: ");
-        firstValue = myObjScanner.nextInt();
+        float a = sc.nextInt();
         System.out.println("ENTER SECOND VALUE: ");
-        secondValue = myObjScanner.nextInt();
+        float b = sc.nextInt();
         
-        // Evaluate condition & print results
-        if (firstValue > secondValue) {
-            System.out.println("FIRST VALUE IS HIGHER");
-        }else {
-            System.out.println("SECOND VALUE IS HIGHER");
+        float higher = (a > b) ? a : b;
+        
+        return higher;
+    }
+    
+    public static boolean ContinuePlaying(){
+        boolean userChoice;
+        // Create a Scanner object
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Continue (y) to continue, else to exit...");
+        int  userInput = sc.nextInt();
+        
+        if (userInput == 1) {
+            userChoice = true;
+        } else {
+            userChoice = false;
         }
         
-        
-        
+        return userChoice;
+  
     }
 }

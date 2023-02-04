@@ -8,30 +8,30 @@ public class Exercise1 {
     
     public static void main(String[] args) {
         
-        // declaring variables
-        int digit1;
-        int digit2;
-        int digit3;
-        float total;
-        float promedio;
+        MensajeBienvenida();
+        double average = CalculateAverage();
+        MensajeSalida(average);
         
-        Scanner myObj = new Scanner(System.in);
-        
+    }
+    
+    public static void MensajeBienvenida() {
         System.out.println("\nAVERAGE CALCULATOR\n");
-        System.out.println("ENTER FIRST VALUE: ");       
+    }
         
-        // nextInt() used to read integers
-        digit1 = myObj.nextInt(); 
-        System.out.println("ENTER SECOND VALUE: ");       
-        digit2 = myObj.nextInt();
-        System.out.println("ENTER THIRD VALUE: ");       
-        digit3 = myObj.nextInt();
+    public static void MensajeSalida(double average_total) {
+        System.out.println("The average is: " + average_total);
+    }
+    
+    public static double CalculateAverage() {
+        double total = 0;
+        double average = 0;
+        Scanner sc = new Scanner(System.in);
         
-        // sum 3 digits and devid by 3
-        total = digit1 + digit2 + digit3;
-        promedio = total / 3;
-        
-        // print results
-        System.out.println("THE AVERAGE IS: " + promedio);
+        for (int i = 1; i < 4; i++) {
+            System.out.println("ENTER VALUE " + (i) + ":" );
+            total += sc.nextDouble();
+            average = total / i;
+        }        
+        return average;
     }
 }
