@@ -35,19 +35,12 @@ public class Exercise2 {
     }
     
     public static boolean ContinuePlaying(){
-        boolean userChoice;
         // Create a Scanner object
         Scanner sc = new Scanner(System.in);
         System.out.println("Continue (y) to continue, else to exit...");
         int  userInput = sc.nextInt();
-        
-        if (userInput == 1) {
-            userChoice = true;
-        } else {
-            userChoice = false;
-        }
-        
-        return userChoice;
+        boolean gameIsRunning = (userInput == 1) ? true : false;
+        return gameIsRunning;
   
     }
 }
