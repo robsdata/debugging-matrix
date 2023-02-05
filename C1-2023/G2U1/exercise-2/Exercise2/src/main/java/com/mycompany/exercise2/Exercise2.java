@@ -12,12 +12,12 @@ public class Exercise2 {
     public static void main(String[] args) {
 
         do {            
-            System.out.println("The higher number is: " + DetermineHigherNumber());    
-        } while (ContinuePlaying());
+            System.out.println("The higher number is: " + determineHigherNumber());    
+        } while (continuePlaying());
         
     }
     
-    public static float DetermineHigherNumber() {
+    public static float determineHigherNumber() {
         
         // Create a Scanner object
         Scanner sc = new Scanner(System.in);
@@ -34,7 +34,7 @@ public class Exercise2 {
         return higher;
     }
     
-    public static boolean ContinuePlaying(){
+    public static boolean continuePlaying(){
         // Create a Scanner object
         Scanner sc = new Scanner(System.in);
         System.out.println("Continue (y) to continue, else to exit...");

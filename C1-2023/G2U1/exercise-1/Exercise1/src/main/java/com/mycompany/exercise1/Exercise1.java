@@ -5,24 +5,16 @@ package com.mycompany.exercise1;
 import java.util.Scanner; 
 
 public class Exercise1 {
-    
-    public static void main(String[] args) {
         
-        MensajeBienvenida();
-        double average = CalculateAverage();
-        MensajeSalida(average);
-        
-    }
-    
-    public static void MensajeBienvenida() {
+    public static void mensajeBienvenida() {
         System.out.println("\nAVERAGE CALCULATOR\n");
     }
         
-    public static void MensajeSalida(double average_total) {
+    public static void mensajeSalida(double average_total) {
         System.out.println("The average is: " + average_total);
     }
     
-    public static double CalculateAverage() {
+    public static double calculateAverage() {
         double total = 0;
         double average = 0;
         Scanner sc = new Scanner(System.in);
@@ -31,7 +23,16 @@ public class Exercise1 {
             System.out.println("ENTER VALUE " + (i) + ":" );
             total += sc.nextDouble();
             average = total / i;
-        }        
+        }       
         return average;
     }
+    
+    public static void main(String[] args) {
+        
+        mensajeBienvenida();
+        double average = calculateAverage();
+        mensajeSalida(average);
+        
+    }
+
 }
